@@ -27,3 +27,6 @@ else {
 // ternary version
 const makeEasy = (isFriend === true) ? "he is my friend" : "he is not my friend";
 console.log(makeEasy);
+
+
+// Note : Normally ternary operator use for boolean data types.
