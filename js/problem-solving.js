@@ -9,16 +9,24 @@ const students = [
     { name : "Riaz",    email : "jakariamahmud016@gmail.com", avg : 37, fiftyPercent : true}
 ]
 
+
+// using filter method
 const result = students.filter(student => student.avg >= 50 && student.fiftyPercent === true);
 
 console.log(result);
 
+
+// using method
 result.map(getChance => {
+
+    // destructuring method
     const { name, email } = getChance;
     console.log(`${name}, ${email}`);
 })
 
 result.map(getAvg => {
+
+    // destructuring method
     const {name, email, avg } = getAvg;
     console.log(`${name}, ${email},${avg}`);
 })
