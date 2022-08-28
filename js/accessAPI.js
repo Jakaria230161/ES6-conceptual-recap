@@ -70,8 +70,10 @@ students.map(student => {
         const information = `
             My name is ${name}.
             My age is ${age}.
-            My gender is ${isMale === true ? "Male" : "female"}
-            My all subjects are ${subjects}
+            My gender is ${isMale === true ? "Male" : "female"}.
+            My all subjects are ${subjects.map(subjects => subjects)}.
+            
+            My all subjects are ${subjects}.
         `;
         console.log(information);
         
